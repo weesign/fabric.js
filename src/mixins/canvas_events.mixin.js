@@ -311,7 +311,7 @@
      * @param {Event} e Event object fired on mousedown
      */
     _onTouchStart: function(e) {
-      const targetR = this.findTarget(e);
+      var targetR = this.findTarget(e);
       !this.allowTouchScrolling && e.preventDefault && e.preventDefault();
       targetR && e.preventDefault && e.preventDefault();
       if (this.mainTouchId === null) {
@@ -389,7 +389,7 @@
      * @param {Event} e Event object fired on mousemove
      */
     _onMouseMove: function (e) {
-      const targetR = this.findTarget(e);
+      var targetR = this.findTarget(e);
       !this.allowTouchScrolling && e.preventDefault && e.preventDefault();
       targetR && e.preventDefault && e.preventDefault();
       this.__onMouseMove(e);
